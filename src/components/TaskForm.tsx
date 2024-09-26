@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { Form, Input, DatePicker, Select, Button } from 'antd';
-import { addTask, updateTask } from '../redux/taskSlice';
-import { Task } from '../types/task';
+import { addTask, updateTask } from '../Redux/taskSlice';
+import { Task } from '../types';
 import dayjs from 'dayjs';
 
 const TaskForm: React.FC<{ editingTask: Task | null; setEditingTask: (task: Task | null) => void }> = ({ editingTask, setEditingTask }) => {

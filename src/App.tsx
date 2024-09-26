@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Provider } from 'react-redux';
-import { store } from './redux/store';
+import { store } from './Redux/store';
 import TaskForm from './components/TaskForm';
 import TaskList from './components/TaskList';
-import { Task } from './types/task';
+import { Task } from './types';
 
 const App: React.FC = () => {
   const [editingTask, setEditingTask] = useState<Task | null>(null);
